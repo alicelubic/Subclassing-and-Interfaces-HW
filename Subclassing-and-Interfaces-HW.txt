@@ -1,0 +1,22 @@
+1. Class variables with keyword static cannot be duplicated in different classes or instances. These can be accessed without creating an instance of the class.
+Member variables can be accessed in all the methods throughout the class, and can have different values in different instances because they are duplicates of the original member variables.
+
+2. It does make sense to write getter and setter methods for a public member variable because the variables can be accessed by anyone. It does not make sense for private variables because other classes and methods cannot see that they exist.
+
+3. It is best to make member variables private so that the user, or more likely, other developers cannot change them, which would affect any instances of those variables throughout the project and render it unusable. 
+
+4. Class A would be the subclass, extending to the super class B. B would be parent, A would be child.
+
+5. Inheriting from a parent class means that declared variables and methods in the parent class can be passed or called in the child class, which removes the need for redundant code.
+
+6. This call will cause an error because the method exists in the subclass, but the object myAppliance is of the object type of the parent class, thus it cannot access what is in its subclass. The subclass can access what is in the parent class, but not the reverse. I'm a little fuzzy on the concept of casting, but I think that if we cast it to be a Refrigerator object the method would work.
+
+7. You need to implement them, but they only need to exist in the concrete classes, they don't need to be called. In an abstract class, you simply declare the abstract method, and then in the concrete classes you define what the method will do.
+
+8. In an interface, you can simply declare a method, which must then be implemented in all the concrete classes since the abstract method implements the interfaces.
+
+9. You can't make an instance of an abstract class, only of its subclasses. cannot be both abstract and final because a final class cannot be changed, nor can it be subclassed. Abstract classes must be subclassed to implement those abstract methods.
+
+10. Whe a method in a subclass overrides the method in its parent class, it is implementing behaviors that are specific to that subclass, rather than the more general behaviors defined in the mehtod in the parent class. When the method is called on the child class, the child class's method will be executed.
+
+11. List is the parent class, LinkedList and ArrayList are subclasses of List. A method that takes an input of List is polymorphic because it has the potential to become any of it subclasses. That is useful for if you don't know ahead of time which kind of List you will need.
